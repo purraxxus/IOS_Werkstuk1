@@ -27,7 +27,10 @@ class PersoonDetailViewController: UIViewController {
         persoonAdres.text = personenLijst[1].adres
         latitude.text = String(personenLijst[1].gpsCoordinatenLat)
         longitude.text = String(personenLijst[1].gpsCoordinatenLong)
-        map.setRegion(MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2DMake(personenLijst[1].gpsCoordinatenLat, personenLijst[1].gpsCoordinatenLong), distanceFromMapMarker, distanceFromMapMarker), animated: true)
+        let coordinates = CLLocationCoordinate2DMake(personenLijst[1].gpsCoordinatenLat, personenLijst[1].gpsCoordinatenLong)
+        map.setRegion(MKCoordinateRegionMakeWithDistance(coordinates, distanceFromMapMarker, distanceFromMapMarker), animated: true)
+        let pin = Annotation(title: personenLijst[1].adres, subtitle: personenLijst[1].voorNaam + " " + personenLijst[1].naam, coordinate: coordinates)
+        map.addAnnotation(pin)
     }
 
     override func didReceiveMemoryWarning() {

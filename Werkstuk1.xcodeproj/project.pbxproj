@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F7E50D8208E287E0021AAE6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7E50D7208E287E0021AAE6 /* MapKit.framework */; };
+		3F7E50DA208E332E0021AAE6 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E50D9208E332E0021AAE6 /* Annotation.swift */; };
 		3FFBCA8F2080C47100B14AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBCA8E2080C47100B14AB3 /* AppDelegate.swift */; };
 		3FFBCA912080C47100B14AB3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBCA902080C47100B14AB3 /* HomeViewController.swift */; };
 		3FFBCA942080C47100B14AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFBCA922080C47100B14AB3 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		3F7E50D7208E287E0021AAE6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3F7E50D9208E332E0021AAE6 /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		3FFBCA8B2080C47100B14AB3 /* Werkstuk1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werkstuk1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFBCA8E2080C47100B14AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFBCA902080C47100B14AB3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		3F7E50D5208E1EDC0021AAE6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3F7E50D9208E332E0021AAE6 /* Annotation.swift */,
 				3FFBCABC2080D26800B14AB3 /* Personen.swift */,
 			);
 			name = Model;
@@ -333,6 +336,7 @@
 				3FFBCA8F2080C47100B14AB3 /* AppDelegate.swift in Sources */,
 				3FFBCAC720836D4B00B14AB3 /* PersoonDetailViewController.swift in Sources */,
 				3FFBCABF2080DE9200B14AB3 /* viewControllerTableViewCell.swift in Sources */,
+				3F7E50DA208E332E0021AAE6 /* Annotation.swift in Sources */,
 				3FFBCABD2080D26800B14AB3 /* Personen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
