@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F7E50D8208E287E0021AAE6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7E50D7208E287E0021AAE6 /* MapKit.framework */; };
 		3FFBCA8F2080C47100B14AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBCA8E2080C47100B14AB3 /* AppDelegate.swift */; };
 		3FFBCA912080C47100B14AB3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBCA902080C47100B14AB3 /* HomeViewController.swift */; };
 		3FFBCA942080C47100B14AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFBCA922080C47100B14AB3 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F7E50D7208E287E0021AAE6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3FFBCA8B2080C47100B14AB3 /* Werkstuk1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werkstuk1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFBCA8E2080C47100B14AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFBCA902080C47100B14AB3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7E50D8208E287E0021AAE6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +126,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		3F7E50D6208E287E0021AAE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F7E50D7208E287E0021AAE6 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3FFBCA822080C47000B14AB3 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +141,7 @@
 				3FFBCAA22080C47100B14AB3 /* Werkstuk1Tests */,
 				3FFBCAAD2080C47100B14AB3 /* Werkstuk1UITests */,
 				3FFBCA8C2080C47100B14AB3 /* Products */,
+				3F7E50D6208E287E0021AAE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -244,6 +256,11 @@
 					3FFBCA8A2080C47000B14AB3 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					3FFBCA9E2080C47100B14AB3 = {
 						CreatedOnToolsVersion = 8.2.1;

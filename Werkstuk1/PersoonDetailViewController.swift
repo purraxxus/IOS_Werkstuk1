@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class PersoonDetailViewController: UIViewController {
 
@@ -15,6 +16,9 @@ class PersoonDetailViewController: UIViewController {
     @IBOutlet weak var persoonAdres: UILabel!
     @IBOutlet weak var latitude: UILabel!
     @IBOutlet weak var longitude: UILabel!
+    @IBOutlet var map: MKMapView!
+    
+    let distanceFromMapMarker:CLLocationDegrees = 2000
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +27,7 @@ class PersoonDetailViewController: UIViewController {
         persoonAdres.text = personenLijst[1].adres
         latitude.text = String(personenLijst[1].gpsCoordinatenLat)
         longitude.text = String(personenLijst[1].gpsCoordinatenLong)
-
-        // Do any additional setup after loading the view.
+        map.setRegion(MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2DMake(personenLijst[1].gpsCoordinatenLat, personenLijst[1].gpsCoordinatenLong), distanceFromMapMarker, distanceFromMapMarker), animated: true)
     }
 
     override func didReceiveMemoryWarning() {
