@@ -86,6 +86,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F7E50D2208E1EB80021AAE6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FFBCA902080C47100B14AB3 /* HomeViewController.swift */,
+				3FFBCAC620836D4B00B14AB3 /* PersoonDetailViewController.swift */,
+				3FFBCABE2080DE9200B14AB3 /* viewControllerTableViewCell.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3F7E50D3208E1EC00021AAE6 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				3FFBCA922080C47100B14AB3 /* Main.storyboard */,
+				3FFBCA972080C47100B14AB3 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		3F7E50D4208E1ECF0021AAE6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3FFBCAC02080E31700B14AB3 /* brian.jpg */,
+				3FFBCAC12080E31700B14AB3 /* kelly.jpg */,
+				3FFBCAC22080E31700B14AB3 /* kobe.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		3F7E50D5208E1EDC0021AAE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FFBCABC2080D26800B14AB3 /* Personen.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3FFBCA822080C47000B14AB3 = {
 			isa = PBXGroup;
 			children = (
@@ -109,18 +146,13 @@
 		3FFBCA8D2080C47100B14AB3 /* Werkstuk1 */ = {
 			isa = PBXGroup;
 			children = (
-				3FFBCA8E2080C47100B14AB3 /* AppDelegate.swift */,
-				3FFBCA902080C47100B14AB3 /* HomeViewController.swift */,
-				3FFBCAC620836D4B00B14AB3 /* PersoonDetailViewController.swift */,
-				3FFBCA922080C47100B14AB3 /* Main.storyboard */,
-				3FFBCABE2080DE9200B14AB3 /* viewControllerTableViewCell.swift */,
 				3FFBCA952080C47100B14AB3 /* Assets.xcassets */,
-				3FFBCA972080C47100B14AB3 /* LaunchScreen.storyboard */,
 				3FFBCA9A2080C47100B14AB3 /* Info.plist */,
-				3FFBCABC2080D26800B14AB3 /* Personen.swift */,
-				3FFBCAC02080E31700B14AB3 /* brian.jpg */,
-				3FFBCAC12080E31700B14AB3 /* kelly.jpg */,
-				3FFBCAC22080E31700B14AB3 /* kobe.jpg */,
+				3FFBCA8E2080C47100B14AB3 /* AppDelegate.swift */,
+				3F7E50D5208E1EDC0021AAE6 /* Model */,
+				3F7E50D2208E1EB80021AAE6 /* Controllers */,
+				3F7E50D3208E1EC00021AAE6 /* StoryBoards */,
+				3F7E50D4208E1ECF0021AAE6 /* Images */,
 			);
 			path = Werkstuk1;
 			sourceTree = "<group>";
@@ -529,6 +561,7 @@
 				3FFBCAB52080C47100B14AB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FFBCAB62080C47100B14AB3 /* Build configuration list for PBXNativeTarget "Werkstuk1Tests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +570,7 @@
 				3FFBCAB82080C47100B14AB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FFBCAB92080C47100B14AB3 /* Build configuration list for PBXNativeTarget "Werkstuk1UITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +579,7 @@
 				3FFBCABB2080C47100B14AB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
