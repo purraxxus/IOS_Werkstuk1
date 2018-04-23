@@ -24,7 +24,7 @@ class PersoonDetailViewController: UIViewController {
         super.viewDidLoad()
         persoonImage.image = UIImage(named: personenLijst[1].foto)
         persoonNaam.text = personenLijst[1].voorNaam + " " + personenLijst[1].naam
-        persoonAdres.text = personenLijst[1].adres
+        persoonAdres.text = String(personenLijst[1].telefoonNummer)
         latitude.text = String(personenLijst[1].gpsCoordinatenLat)
         longitude.text = String(personenLijst[1].gpsCoordinatenLong)
         let coordinates = CLLocationCoordinate2DMake(personenLijst[1].gpsCoordinatenLat, personenLijst[1].gpsCoordinatenLong)
@@ -38,7 +38,7 @@ class PersoonDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 

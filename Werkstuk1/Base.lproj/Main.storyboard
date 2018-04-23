@@ -57,7 +57,7 @@
                                             <outlet property="labelNaam" destination="T8O-bx-wNH" id="1c5-Fs-nL4"/>
                                             <outlet property="labelVoorNaam" destination="XRZ-VG-c0o" id="hpA-kH-35T"/>
                                             <outlet property="myImage" destination="fDe-81-8jD" id="7Pa-S2-oti"/>
-                                            <segue destination="8YU-Uu-CZi" kind="show" id="8oE-cs-MS1"/>
+                                            <segue destination="8YU-Uu-CZi" kind="presentation" id="PKa-r4-lXW"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -86,9 +86,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XAA-yX-itU">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XAA-yX-itU">
                                 <rect key="frame" x="12" y="28" width="393" height="279"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="NpM-ib-nU7" appends="YES" id="th8-ap-F1L"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcH-U8-R0E">
                                 <rect key="frame" x="12" y="315" width="343" height="21"/>
@@ -137,8 +141,40 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBo-oA-y5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="NpM-ib-nU7">
+                    <connections>
+                        <segue destination="s0d-RS-Ljx" kind="presentation" id="RYP-vy-Jz8"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="959.4202898550725" y="122.28260869565219"/>
+        </scene>
+        <!--Foto Detail View Controller-->
+        <scene sceneID="LAX-Mj-VmB">
+            <objects>
+                <viewController id="s0d-RS-Ljx" customClass="FotoDetailViewController" customModule="Werkstuk1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lfn-un-bI4"/>
+                        <viewControllerLayoutGuide type="bottom" id="n4k-OK-N50"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YbR-eG-Rdi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VUc-3o-ZSz">
+                                <rect key="frame" x="0.0" y="43" width="414" height="693"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="VUc-3o-ZSz" id="ZQ8-Tn-2H9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oRe-pc-QJk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742.0289855072465" y="121.46739130434784"/>
         </scene>
     </scenes>
 </document>
