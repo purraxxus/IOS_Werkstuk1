@@ -18,6 +18,11 @@ class PersoonDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        persoonImage.image = UIImage(named: personenLijst[1].foto)
+        persoonNaam.text = personenLijst[1].voorNaam + " " + personenLijst[1].naam
+        persoonAdres.text = personenLijst[1].adres
+        latitude.text = String(personenLijst[1].gpsCoordinatenLat)
+        longitude.text = String(personenLijst[1].gpsCoordinatenLong)
 
         // Do any additional setup after loading the view.
     }
