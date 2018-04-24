@@ -12,6 +12,8 @@ var personenLijst: [Personen] = []
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var clickedPersoon:Personen!
+    
     let persoon1 = Personen(naam: "Amerijckx", voorNaam: "Kobe", foto: "kobe.jpg", adres: "Vollezelstraat 97, 1755 Oetingen", gpsCoordinatenLat: 50.7688826, gpsCoordinatenLong: 4.049691400000029, telefoonNummer: 0486210707)
     let persoon2 = Personen(naam: "Tordeur", voorNaam: "Kelly", foto: "kelly.jpg", adres: "Gaasbeekstraat 1, 1600 Oudenaken", gpsCoordinatenLat: 50.780032959999999, gpsCoordinatenLong: 4.197631099999967,telefoonNummer: 0478709610)
     let persoon3 = Personen(naam: "Devits", voorNaam: "Brian", foto: "brian.jpg", adres: "Molenstraat 23, 1570 Vollezele", gpsCoordinatenLat: 50.7661342, gpsCoordinatenLong: 4.0265190000000075,telefoonNummer: 04995512362)
@@ -30,7 +32,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return (cell)
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }

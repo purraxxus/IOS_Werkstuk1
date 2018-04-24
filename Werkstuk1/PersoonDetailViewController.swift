@@ -10,7 +10,9 @@ import UIKit
 import MapKit
 
 class PersoonDetailViewController: UIViewController {
-
+    
+    var clickedPersoon:Personen!
+    
     @IBOutlet weak var persoonImage: UIImageView!
     @IBOutlet weak var persoonNaam: UILabel!
     @IBOutlet weak var persoonAdres: UILabel!

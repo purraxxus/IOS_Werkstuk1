@@ -33,7 +33,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fDe-81-8jD">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fDe-81-8jD">
                                                     <rect key="frame" x="8" y="8" width="85" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -57,7 +57,7 @@
                                             <outlet property="labelNaam" destination="T8O-bx-wNH" id="1c5-Fs-nL4"/>
                                             <outlet property="labelVoorNaam" destination="XRZ-VG-c0o" id="hpA-kH-35T"/>
                                             <outlet property="myImage" destination="fDe-81-8jD" id="7Pa-S2-oti"/>
-                                            <segue destination="8YU-Uu-CZi" kind="presentation" id="PKa-r4-lXW"/>
+                                            <segue destination="8YU-Uu-CZi" kind="show" id="zjp-j7-0TH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -144,7 +144,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sMM-Ft-GSP">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sMM-Ft-GSP">
                                 <rect key="frame" x="12" y="380" width="393" height="326"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
@@ -191,7 +191,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VUc-3o-ZSz">
-                                <rect key="frame" x="0.0" y="43" width="414" height="693"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -211,6 +211,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="KUl-in-sfL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="6zb-yt-W5x">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
