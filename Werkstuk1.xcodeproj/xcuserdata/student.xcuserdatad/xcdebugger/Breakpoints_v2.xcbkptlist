@@ -42,7 +42,7 @@
                   moduleName = "Werkstuk1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/student/Desktop/Werkstuk1/Werkstuk1/Annotation.swift"
-                  timestampString = "546607679.558832"
+                  timestampString = "546608511.2684259"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -57,7 +57,7 @@
                   moduleName = "Werkstuk1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/student/Desktop/Werkstuk1/Werkstuk1/Annotation.swift"
-                  timestampString = "546607679.565955"
+                  timestampString = "546608511.273825"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -65,22 +65,6 @@
                   offsetFromSymbolStart = "4">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Werkstuk1/PersoonDetailViewController.swift"
-            timestampString = "546607773.2529269"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
