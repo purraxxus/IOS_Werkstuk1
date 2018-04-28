@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+var clickedPersoonFoto:String!
 
 class PersoonDetailViewController: UIViewController {
     
@@ -23,15 +24,16 @@ class PersoonDetailViewController: UIViewController {
     let distanceFromMapMarker:CLLocationDegrees = 2000
     
     override func viewDidLoad() {
+        clickedPersoonFoto = clickedPersoon.foto
         super.viewDidLoad()
-        persoonImage.image = UIImage(named: personenLijst[1].foto)
-        persoonNaam.text = personenLijst[1].voorNaam + " " + personenLijst[1].naam
-        persoonAdres.text = String(personenLijst[1].telefoonNummer)
-        latitude.text = String(personenLijst[1].gpsCoordinatenLat)
-        longitude.text = String(personenLijst[1].gpsCoordinatenLong)
-        let coordinates = CLLocationCoordinate2DMake(personenLijst[1].gpsCoordinatenLat, personenLijst[1].gpsCoordinatenLong)
+        persoonImage.image = UIImage(named:clickedPersoon.foto)
+        persoonNaam.text = clickedPersoon.voorNaam + " " + clickedPersoon.naam
+        persoonAdres.text = "0" + String(clickedPersoon.telefoonNummer)
+        latitude.text = String(clickedPersoon.gpsCoordinatenLat)
+        longitude.text = String(clickedPersoon.gpsCoordinatenLong)
+        let coordinates = CLLocationCoordinate2DMake(clickedPersoon.gpsCoordinatenLat, clickedPersoon.gpsCoordinatenLong)
         map.setRegion(MKCoordinateRegionMakeWithDistance(coordinates, distanceFromMapMarker, distanceFromMapMarker), animated: true)
-        let pin = Annotation(title: personenLijst[1].adres, subtitle: personenLijst[1].voorNaam + " " + personenLijst[1].naam, coordinate: coordinates)
+        let pin = Annotation(title: clickedPersoon.adres, subtitle: clickedPersoon.voorNaam + " " + clickedPersoon.naam, coordinate: coordinates)
         map.addAnnotation(pin)
     }
 

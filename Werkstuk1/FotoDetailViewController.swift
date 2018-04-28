@@ -14,7 +14,7 @@ class FotoDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        image.image = UIImage(named: personenLijst[1].foto)
+        image.image = UIImage(named: clickedPersoonFoto)
         // Do any additional setup after loading the view.
     }
 
